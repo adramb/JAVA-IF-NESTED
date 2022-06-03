@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class if_nested{
+    public static void main (String []args){
+        Scanner input = new Scanner (System.in);
+        System.out.println ("Input angka = "); 
+        int angkainput = input.nextInt();
+        
+        if (angkainput <= 11){
+            if (angkainput % 2 == 0){
+                System.out.println ("hijau");
+            } else {
+                System.out.println ("biru");
+            }
+        } else if (angkainput <= 21){
+            if (angkainput % 2 == 0){
+                System.out.println ("biru");
+            } else {
+                System.out.println ("hijau");
+            }
+        } else if (angkainput >= 20 ){
+            if (angkainput % 2 == 0 ){
+                System.out.println ("hijau");
+            } else {
+                System.out.println ("biru");
+            }
+        }
+    }
+}
