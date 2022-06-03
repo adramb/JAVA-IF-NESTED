@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class if_nested{
+    public static void main (String []args){
+        Scanner input = new Scanner (System.in);
+        System.out.println ("Pilih jenis Kelas = "); 
+        int kelas = input.nextInt();
+        System.out.println ("Jumlah penumpang = "); 
+        int penumpang = input.nextInt();
+        int harga;
+        
+        harga=0;
+        if (kelas == 1){
+            if (penumpang <= 4){
+                harga = 100000*penumpang;
+                System.out.println ("Total Tarif = "+harga);
+            } else {
+                harga = 80000*penumpang;
+                System.out.println ("Total Tarif = "+harga);
+            }
+        } else if (kelas == 2){
+            if (penumpang <= 4){
+                harga = 500000*penumpang;
+                System.out.println ("Total Tarif = "+harga);
+            } else {
+                harga = 400000*penumpang;
+                System.out.println ("Total Tarif = "+harga);
+            }
+        }
+    }
+}
